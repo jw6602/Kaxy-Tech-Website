@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../../src/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <title>Kaxy Network Staff Guide</title>
+    <style>
+        body {
+            font-family: 'Comic Neue';
+        }
+    </style>
+</head>
+<body>
+    <h1>Kaxy Network Staff Guide</h1>
+    <h5>Written by Junyu Wang, CEO of Kaxy Tech LLC D/B/A Kaxy Network</h3>
+    <h4>1. Our Service</h4>
+    <p>We currently provide residential isp hosting and ipv4 leasing.</p>
+    <h4>2. Our Pricing</h4>
+    <p>/21 Package: 600 usd/server/month for all four isps includes AT&T, Cox, Lumen, and Sprint. (3 Months Prepayment Required)</p>
+    <p>/20 Package: 650 usd/server/month for all four isps includes AT&T, Cox, Lumen, and Sprint. (3 Months Prepayment Required)</p>
+    <p>For custom package, please contact me to confirm the pricing.</p>
+    <p>Residential ISP Proxies API Software: 50 usd/server/month</p>
+    <h4>3. Our Payment Method</h4>
+    <p>Wire Transfer, Stripe(+3% fee), Alipay, and Wechat.</p>
+    <h4>4. Work Flow for Residential isp hosting</h4>
+    <p>
+        <span>1. Clients bring their ip space to us. Here we require LOA / RIR Object / RPKI / RAdb (Not Necessary).</span>
+        <br>
+        <span>2. First you need to verify RIR Object / RPKI. If everything is set correctly, send the LOA in email to admin@kaxynetwork.com</span>
+        <br>
+        <span>3. I will verify everything and submit the LOA to isp for approval.</span>
+        <br>
+        <span>4. Once the announcement is complete, I will tell you to ask the clients if they want to use our software. If they don't, ask which operating system they want and forward the info to me.</span>
+        <br>
+        <span>5. Create an invoice to clients and deliver the login details of server to the clients once they finish the payment.</span>
+    </p>
+    <h4>5. How to verify LOA</h4>
+    <span>1. You need to check the prefix very carefully.</span>
+    <br>
+    <span>2. Format of LOA: This letter serves as authorization for Kaxy Tech LLC to advertise ... </span>
+    <h4>6. How to verify RIR Route Object?</h4>
+    <p>
+        <span>
+            First, we need to know the ip space belongs to which RIR.
+        </span>
+        <br>
+        <span>RIPE: <a href="https://apps.db.ripe.net/db-web-ui/query" target="_blank">https://apps.db.ripe.net/db-web-ui/query</a></span>
+        <br>
+        <span>ARIN: <a href="https://search.arin.net/" target="_blank">https://search.arin.net/</a></span>
+        <br>
+        <span>AFRINIC: <a href="https://afrinic.net/whois" target="_blank">https://afrinic.net/whois</a></span>
+        <br>
+        <span>APNIC: <a href="https://www.apnic.net/?s=" target="_blank">https://www.apnic.net/?s=</a></span>
+        <br>
+        <span>
+            Simply input one of the ips in the websites above, check if it belongs to each RIR and verify if the route object is set correctly.
+        </span>
+    </p>
+    <h4>7. How to verify RPKI?</h4>
+    <p>Input the prefix (eg. 123.123.123.0/24) into <a href="https://rpki-validator.ripe.net/roas" target="_blank">https://rpki-validator.ripe.net/roas</a></p>
+    <h4>8. RAdb</h4>
+    <p>Input the prefix (eg. 123.123.123.0/24) into <a href="https://www.radb.net/" target="_blank">https://www.radb.net/</a></p>
+    <h4>9. Geolocation Update</h4>
+    <p>
+        <span>There are four major ip databases include ipinfo, ip2location, dbip and maxmind.</span>
+        <br>
+        <span>ipinfo: Email to <a href="mailto:support@ipinfo.io">support@ipinfo.io</a></span>
+        <br>
+        <span>dbip: Email to <a href="mailto:support@db-ip.com">support@db-ip.com</a></span>
+        <br>
+        <span>ip2location: Email to <a href="mailto:support@ip2location.com">support@ip2location.com</a></span>
+        <br>
+        <span>maxmind: Email to <a href="mailto:support@maxmind.com">support@maxmind.com</a> or fill the form in their portal <a href="https://support.maxmind.com/geoip-data-correction-request/correct-a-geoip-location/">https://support.maxmind.com/geoip-data-correction-request/correct-a-geoip-location/</a></span> 
+    </p>
+    <h4>10. Some tips</h4>
+    <p>
+        <span>1. You need to update our clients about the process every two days.</span>
+        <br>
+        <span>2. You need to verify the ROA / RIR Route Object / LOA very carefully. Sometimes the ip providers make mistakes.</span>
+    </p>
+</body>
+</html>
